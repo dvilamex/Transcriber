@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCf0PBRjhf0rF8fWBIxTuoWA"/>
+  <yt:channelId>UCf0PBRjhf0rF8fWBIxTuoWA</yt:channelId>
+  <title>20VC with Harry Stebbings</title>
+  <entry>
+    <id>yt:video:abcdefghijk</id>
+    <yt:videoId>abcdefghijk</yt:videoId>
+    <yt:channelId>UCf0PBRjhf0rF8fWBIxTuoWA</yt:channelId>
+    <title>Why inference costs are falling</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=abcdefghijk"/>
+    <published>2026-11-17T15:00:40+00:00</published>
+    <updated>2026-11-17T16:00:00+00:00</updated>
+    <media:group>
+      <media:title>Why inference costs are falling</media:title>
+      <media:description>A full episode about GPU pricing.</media:description>
+    </media:group>
+  </entry>
+  <entry>
+    <id>yt:video:shortvideo1</id>
+    <yt:videoId>shortvideo1</yt:videoId>
+    <yt:channelId>UCf0PBRjhf0rF8fWBIxTuoWA</yt:channelId>
+    <title>Quick clip #shorts</title>
+    <link rel="alternate" href="https://www.youtube.com/shorts/shortvideo1"/>
+    <published>2026-11-17T18:00:00+00:00</published>
+    <media:group>
+      <media:title>Quick clip #shorts</media:title>
+    </media:group>
+  </entry>
+  <entry>
+    <id>yt:video:zxywvutsrqp</id>
+    <yt:videoId>zxywvutsrqp</yt:videoId>
+    <yt:channelId>UCf0PBRjhf0rF8fWBIxTuoWA</yt:channelId>
+    <title>Older board meeting</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=zxywvutsrqp"/>
+    <published>2026-11-10T12:00:00+00:00</published>
+  </entry>
+</feed>

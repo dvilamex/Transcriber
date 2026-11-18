@@ -1,0 +1,72 @@
+# Channels are matched by channel_id. Handles are documentation only.
+# @Sequoia and @tbpn are unrelated channels; do not substitute them for the
+# Sequoia Capital and TBPN ids below.
+
+init_lookback_hours: 48
+max_retry_runs: 8
+max_retry_days: 7
+dedupe_window_days: 7
+chunk_chars: 12000
+chunk_overlap: 500
+
+transcripts_dir: transcripts
+digests_dir: digests
+state_file: state/seen.json
+covered_topics_file: state/covered_topics.json
+lock_file: state/transcriber.lock
+
+channels:
+  - name: "20VC"
+    handle: "@20VC"
+    channel_id: "UCf0PBRjhf0rF8fWBIxTuoWA"
+    enabled: true
+  - name: "Sequoia Capital"
+    handle: "@sequoiacapital"
+    channel_id: "UCWrF0oN6unbXrWsTN7RctTw"
+    enabled: true
+  - name: "TBPN"
+    handle: "@TBPNLive"
+    channel_id: "UC-DRzaGnL_vtBUpCFH5M0tg"
+    enabled: true
+  - name: "All-In Podcast"
+    handle: "@allin"
+    channel_id: "UCESLZhusAkFfsNsApnjF_Cg"
+    enabled: true
+  - name: "AI Engineer"
+    handle: "@aiDotEngineer"
+    channel_id: "UCLKPca3kwwd-B59HNr-_lvA"
+    enabled: true
+  - name: "Dwarkesh Patel"
+    handle: "@DwarkeshPatel"
+    channel_id: "UCXl4i9dYBrFOabk0xGmbkRA"
+    enabled: true
+
+  # Disabled suggestions. Set enabled: true to include them.
+  - name: "Lenny's Podcast"
+    handle: "@LennysPodcast"
+    channel_id: "UC6t1O76G0jYXOAoYCm153dA"
+    enabled: false
+  - name: "Latent Space"
+    handle: "@LatentSpacePod"
+    channel_id: "UCxBcwypKK-W3GHd_RZ9FZrQ"
+    enabled: false
+  - name: "No Priors"
+    handle: "@NoPriorsPodcast"
+    channel_id: "UCSI7h9hydQ40K5MJHnCrQvw"
+    enabled: false
+  - name: "Acquired"
+    handle: "@acquiredfm"
+    channel_id: "UCyFqFYfTW2VoIQKylJ04Rtw"
+    enabled: false
+  - name: "a16z"
+    handle: "@a16z"
+    channel_id: "UC9cn0TuPq4dnbTY-CBsm8XA"
+    enabled: false
+  - name: "Invest Like the Best"
+    handle: "@ILTB_Podcast"
+    channel_id: "UCpQBb0fToph3jrDulwz1iUQ"
+    enabled: false
+  - name: "Bg2 Pod"
+    handle: "@Bg2Pod"
+    channel_id: "UC-yRDvpR99LUc5l7i7jLzew"
+    enabled: false
