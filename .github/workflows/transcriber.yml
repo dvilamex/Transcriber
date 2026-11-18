@@ -1,0 +1,120 @@
+name: Transcriber
+
+# 07:00 America/Mexico_City every day, including Saturday and Sunday.
+# Mexico City is CST (UTC-6) year-round, so 07:00 local is 13:00 UTC.
+# GitHub cron has no timezone field; the day-of-week star is what includes weekends.
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "run fetches new videos. init marks the current feeds as seen except the lookback window."
+        type: choice
+        default: run
+        options:
+          - run
+          - init
+      since_hours:
+        description: "run: only videos from the last N hours. init: hours to leave unseen."
+        required: false
+        type: string
+      limit:
+        description: "Max videos this run should process. Scheduled runs use 20 when this is empty."
+        required: false
+        type: string
+      no_summarize:
+        description: "Save transcripts and skip the LLM."
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transcriber-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Prepare cookies file
+        env:
+          YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+        run: |
+          if [ -n "$YOUTUBE_COOKIES" ]; then
+            printf '%s\n' "$YOUTUBE_COOKIES" > "$RUNNER_TEMP/youtube-cookies.txt"
+            echo "YOUTUBE_COOKIES_FILE=$RUNNER_TEMP/youtube-cookies.txt" >> "$GITHUB_ENV"
+          fi
+
+      - name: Run transcriber
+        id: transcribe
+        continue-on-error: true
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_COMMAND: ${{ inputs.command }}
+          INPUT_SINCE_HOURS: ${{ inputs.since_hours }}
+          INPUT_LIMIT: ${{ inputs.limit }}
+          INPUT_NO_SUMMARIZE: ${{ inputs.no_summarize }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          YOUTUBE_PROXY: ${{ secrets.YOUTUBE_PROXY }}
+          WEBSHARE_PROXY_USERNAME: ${{ secrets.WEBSHARE_PROXY_USERNAME }}
+          WEBSHARE_PROXY_PASSWORD: ${{ secrets.WEBSHARE_PROXY_PASSWORD }}
+          WEBSHARE_FILTER_LOCATIONS: ${{ vars.WEBSHARE_FILTER_LOCATIONS }}
+          SUPADATA_API_KEY: ${{ secrets.SUPADATA_API_KEY }}
+          SUPADATA_MODE: ${{ vars.SUPADATA_MODE }}
+        run: |
+          set -euo pipefail
+          if [ "${EVENT_NAME}" = "workflow_dispatch" ] && [ "${INPUT_COMMAND}" = "init" ]; then
+            args=(init)
+            if [ -n "${INPUT_SINCE_HOURS}" ]; then
+              args+=(--hours "${INPUT_SINCE_HOURS}")
+            fi
+          else
+            args=(run)
+            if [ "${EVENT_NAME}" = "schedule" ] && [ -z "${INPUT_LIMIT}" ]; then
+              args+=(--limit 20)
+            fi
+            if [ -n "${INPUT_SINCE_HOURS}" ]; then
+              args+=(--since "${INPUT_SINCE_HOURS}")
+            fi
+            if [ -n "${INPUT_LIMIT}" ]; then
+              args+=(--limit "${INPUT_LIMIT}")
+            fi
+            if [ "${INPUT_NO_SUMMARIZE}" = "true" ]; then
+              args+=(--no-summarize)
+            fi
+          fi
+          python -m transcriber "${args[@]}"
+
+      - name: Commit transcripts, digest, and state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add transcripts digests state
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update transcripts and digest"
+            git push
+          fi
+
+      - name: Fail the job if transcriber failed
+        if: steps.transcribe.outcome == 'failure'
+        run: exit 1
