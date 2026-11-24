@@ -1,6 +1,21 @@
 {
   "version": 1,
   "videos": {
+    "-NFMsM2y0Vk": {
+      "attempts": 1,
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "error": "-NFMsM2y0Vk: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-NFMsM2y0Vk! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] -NFMsM2y0Vk: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
+      "first_failed_at": "2026-11-24T14:16:24.990035+00:00",
+      "handle": "@aiDotEngineer",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
+      "published": "2026-11-23T20:00:40+00:00",
+      "status": "failed",
+      "title": "12 Rules for a Software Factory That Doesn't Ship Slop \u2014 Dex Horthy, Factory",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/watch?v=-NFMsM2y0Vk",
+      "video_id": "-NFMsM2y0Vk"
+    },
     "-PQpJAdp7gw": {
       "attempts": 0,
       "channel": "Dwarkesh Patel",
@@ -9,22 +24,22 @@
       "published": "2026-11-18T17:00:30+00:00",
       "status": "skipped_short",
       "title": "How Hackers Got Into OpenAI\u2019s Code and Anthropic\u2019s Slack - Paul Christiano",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/-PQpJAdp7gw",
       "video_id": "-PQpJAdp7gw"
     },
     "-iCfFQQBMzI": {
-      "attempts": 4,
+      "attempts": 5,
       "channel": "TBPN",
       "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
       "error": "-iCfFQQBMzI: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-iCfFQQBMzI! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] -iCfFQQBMzI: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-20T14:12:30.142965+00:00",
       "handle": "@TBPNLive",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-19T20:42:19+00:00",
       "status": "failed",
       "title": "Ant IPO (Hemant Joins), GTA 6 Launch (Strauss Zelnick Joins Live)",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=-iCfFQQBMzI",
       "video_id": "-iCfFQQBMzI"
     },
@@ -56,32 +71,32 @@
       "video_id": "0EnLxIbAvYk"
     },
     "0FOR4_lSvJs": {
-      "attempts": 4,
+      "attempts": 5,
       "channel": "TBPN",
       "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
       "error": "0FOR4_lSvJs: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0FOR4_lSvJs! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] 0FOR4_lSvJs: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-20T14:12:30.142965+00:00",
       "handle": "@TBPNLive",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-19T20:33:04+00:00",
       "status": "failed",
       "title": "The CEO Behind GTA VI on Building the Biggest Game in History",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=0FOR4_lSvJs",
       "video_id": "0FOR4_lSvJs"
     },
     "0LeT996Hz3E": {
-      "attempts": 3,
+      "attempts": 4,
       "channel": "AI Engineer",
       "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
       "error": "0LeT996Hz3E: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0LeT996Hz3E! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] 0LeT996Hz3E: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-21T13:52:19.693237+00:00",
       "handle": "@aiDotEngineer",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-20T18:30:06+00:00",
       "status": "failed",
       "title": "Engineer Your Coding Agents Like Any Other System \u2014 Zach Lloyd, Warp",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=0LeT996Hz3E",
       "video_id": "0LeT996Hz3E"
     },
@@ -195,22 +210,22 @@
       "published": "2026-11-11T12:06:55+00:00",
       "status": "skipped_short",
       "title": "WE SPEND MORE ON AI THAN SALARIES | MERCOR CEO",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/3T868ghJyEk",
       "video_id": "3T868ghJyEk"
     },
     "3ZkDiDrxDeY": {
-      "attempts": 2,
+      "attempts": 3,
       "channel": "20VC",
       "channel_id": "UCf0PBRjhf0rF8fWBIxTuoWA",
       "error": "3ZkDiDrxDeY: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3ZkDiDrxDeY! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] 3ZkDiDrxDeY: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-22T13:51:19.032522+00:00",
       "handle": "@20VC",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-21T15:35:01+00:00",
       "status": "failed",
       "title": "Why Neo-Clouds are Great Businesses & The State of Compute with Kush Bavaria, Co-Founder @ Ornn",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=3ZkDiDrxDeY",
       "video_id": "3ZkDiDrxDeY"
     },
@@ -222,7 +237,7 @@
       "published": "2026-11-12T00:00:15+00:00",
       "status": "skipped_short",
       "title": "How Robert Moses Got Everything Built",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/3eMnUYkvbJg",
       "video_id": "3eMnUYkvbJg"
     },
@@ -234,7 +249,7 @@
       "published": "2026-11-14T22:00:11+00:00",
       "status": "skipped_short",
       "title": "David Sacks on Jensen\u2019s Exit: China Wins, America Loses",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/3zW2X9OXxC0",
       "video_id": "3zW2X9OXxC0"
     },
@@ -276,7 +291,7 @@
       "published": "2026-11-16T19:00:40+00:00",
       "status": "skipped_short",
       "title": "Could the AI Bubble Burst Sooner Than You Think? | TypeSafe AI CEO",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/5iSYPTFOeiU",
       "video_id": "5iSYPTFOeiU"
     },
@@ -303,7 +318,7 @@
       "published": "2026-11-15T23:19:02+00:00",
       "status": "skipped_short",
       "title": "AI\u2019s math progress matters more for AI research than for math",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/7DO3mOl_OrI",
       "video_id": "7DO3mOl_OrI"
     },
@@ -339,7 +354,7 @@
       "published": "2026-11-19T19:00:39+00:00",
       "status": "skipped_short",
       "title": "Anthropic is the biggest winner from Jensen's Exit",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/7uqCc2gCf6Q",
       "video_id": "7uqCc2gCf6Q"
     },
@@ -359,17 +374,17 @@
       "video_id": "8h-gfrVYyAU"
     },
     "8kUT9jtv_pQ": {
-      "attempts": 3,
+      "attempts": 4,
       "channel": "TBPN",
       "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
       "error": "8kUT9jtv_pQ: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=8kUT9jtv_pQ! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] 8kUT9jtv_pQ: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-21T13:52:19.693237+00:00",
       "handle": "@TBPNLive",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-21T01:08:28+00:00",
       "status": "failed",
       "title": "AI Solves Riemann Hypothesis, Stock Market Plunges, The Mansion Section | Diet TBPN",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=8kUT9jtv_pQ",
       "video_id": "8kUT9jtv_pQ"
     },
@@ -423,7 +438,7 @@
       "published": "2026-11-04T23:17:12+00:00",
       "status": "skipped_short",
       "title": "The man who handed out LBJ\u2019s money - Robert Caro",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/CGPQ2-pJ6As",
       "video_id": "CGPQ2-pJ6As"
     },
@@ -435,7 +450,7 @@
       "published": "2026-11-10T19:05:31+00:00",
       "status": "skipped_short",
       "title": "HE COULD WALK AWAY WITH BILLIONS. HE SAID NO",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/CYs13p70rwo",
       "video_id": "CYs13p70rwo"
     },
@@ -447,7 +462,7 @@
       "published": "2026-11-13T22:39:45+00:00",
       "status": "skipped_short",
       "title": "I\u2019ve changed my mind about continual learning",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/CoSptp9tYpY",
       "video_id": "CoSptp9tYpY"
     },
@@ -494,32 +509,32 @@
       "video_id": "Da5_r3tFkDI"
     },
     "G5w7EyF-aFQ": {
-      "attempts": 3,
+      "attempts": 4,
       "channel": "All-In Podcast",
       "channel_id": "UCESLZhusAkFfsNsApnjF_Cg",
       "error": "G5w7EyF-aFQ: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=G5w7EyF-aFQ! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] G5w7EyF-aFQ: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-21T13:52:19.693237+00:00",
       "handle": "@allin",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-20T22:28:55+00:00",
       "status": "failed",
       "title": "Anthropic Goes Public, Nvidia in Crisis, Markets Tank, Open Source Crackdown?",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=G5w7EyF-aFQ",
       "video_id": "G5w7EyF-aFQ"
     },
     "GKSQYbELDzw": {
-      "attempts": 3,
+      "attempts": 4,
       "channel": "AI Engineer",
       "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
       "error": "GKSQYbELDzw: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=GKSQYbELDzw! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] GKSQYbELDzw: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-21T13:52:19.693237+00:00",
       "handle": "@aiDotEngineer",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-21T17:00:06+00:00",
       "status": "failed",
       "title": "What Runs Where? Local AI in Production \u2014 Ahmad Osman, Osmantic",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=GKSQYbELDzw",
       "video_id": "GKSQYbELDzw"
     },
@@ -546,22 +561,22 @@
       "published": "2026-11-16T01:30:09+00:00",
       "status": "skipped_short",
       "title": "Jason: \"The leak came from inside the White House.\"",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/JF5W20NVLL4",
       "video_id": "JF5W20NVLL4"
     },
     "JNexz3Tbiu8": {
-      "attempts": 1,
+      "attempts": 2,
       "channel": "AI Engineer",
       "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
       "error": "JNexz3Tbiu8: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=JNexz3Tbiu8! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] JNexz3Tbiu8: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-23T14:20:35.316450+00:00",
       "handle": "@aiDotEngineer",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-22T20:00:27+00:00",
       "status": "failed",
       "title": "Build the Workshop Before the Software Factory \u2014 Armin Ronacher, Earendil",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=JNexz3Tbiu8",
       "video_id": "JNexz3Tbiu8"
     },
@@ -573,9 +588,21 @@
       "published": "2026-11-06T04:34:08+00:00",
       "status": "skipped_short",
       "title": "The Man Who Built New York Without Winning a Single Vote",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/JyB3mExvn_w",
       "video_id": "JyB3mExvn_w"
+    },
+    "KVOriZgI1QI": {
+      "attempts": 0,
+      "channel": "TBPN",
+      "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
+      "handle": "@TBPNLive",
+      "published": "2026-11-23T17:33:59+00:00",
+      "status": "skipped_short",
+      "title": "Waymos Can't Swim",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/shorts/KVOriZgI1QI",
+      "video_id": "KVOriZgI1QI"
     },
     "KotQbLX8pOw": {
       "attempts": 1,
@@ -600,22 +627,22 @@
       "published": "2026-11-19T17:36:20+00:00",
       "status": "skipped_short",
       "title": "Chantel Jeffries on Being Founder-First",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/LuTx7-eGNiI",
       "video_id": "LuTx7-eGNiI"
     },
     "MDI81OaZAD4": {
-      "attempts": 3,
+      "attempts": 4,
       "channel": "AI Engineer",
       "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
       "error": "MDI81OaZAD4: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=MDI81OaZAD4! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] MDI81OaZAD4: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-21T13:52:19.693237+00:00",
       "handle": "@aiDotEngineer",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-20T20:00:36+00:00",
       "status": "failed",
       "title": "How to build an agent that builds the culture \u2014 Zach Bruggeman, Ramp",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=MDI81OaZAD4",
       "video_id": "MDI81OaZAD4"
     },
@@ -627,7 +654,7 @@
       "published": "2026-11-16T23:30:11+00:00",
       "status": "skipped_short",
       "title": "\"Cops need body cams to DEFEND themselves!\"",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/MUtgp2ixLyk",
       "video_id": "MUtgp2ixLyk"
     },
@@ -666,7 +693,7 @@
       "published": "2026-11-10T15:15:20+00:00",
       "status": "skipped_short",
       "title": "Why WashU\u2019s CIO Is Still Investing in China",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/NsvFpH37OXg",
       "video_id": "NsvFpH37OXg"
     },
@@ -690,7 +717,7 @@
       "published": "2026-11-14T17:00:16+00:00",
       "status": "skipped_short",
       "title": "David Friedberg: Was Jensen Taken Out So the Deep State Could Control AI?",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/ONVWLa2LOzk",
       "video_id": "ONVWLa2LOzk"
     },
@@ -729,9 +756,21 @@
       "published": "2026-11-02T19:30:23+00:00",
       "status": "skipped_short",
       "title": "Robotics Has No Internet to Pre-Train On | Josh Gao, Mecka",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/PLXsY-jPW6U",
       "video_id": "PLXsY-jPW6U"
+    },
+    "QAE9nRTHtas": {
+      "attempts": 0,
+      "channel": "Dwarkesh Patel",
+      "channel_id": "UCXl4i9dYBrFOabk0xGmbkRA",
+      "handle": "@DwarkeshPatel",
+      "published": "2026-11-23T19:37:54+00:00",
+      "status": "skipped_short",
+      "title": "What if GPT-10 did the Hugging Face hack? - Paul Christiano",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/shorts/QAE9nRTHtas",
+      "video_id": "QAE9nRTHtas"
     },
     "QNCd8UHCpFQ": {
       "attempts": 0,
@@ -741,7 +780,7 @@
       "published": "2026-11-21T21:00:39+00:00",
       "status": "skipped_short",
       "title": "David Friedberg: The AI Job Loss Narrative is Bullsh*t",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/QNCd8UHCpFQ",
       "video_id": "QNCd8UHCpFQ"
     },
@@ -753,7 +792,7 @@
       "published": "2026-11-21T16:00:04+00:00",
       "status": "skipped_short",
       "title": "David Friedberg: Restricting Open Source AI Is a Path to Tyranny",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/QgN2bwiUh_U",
       "video_id": "QgN2bwiUh_U"
     },
@@ -765,7 +804,7 @@
       "published": "2026-11-22T15:00:18+00:00",
       "status": "skipped_short",
       "title": "Chamath Predicts the Rise of AI\u2019s Magnificent 10: \u201cDirt to Application\u201d",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/QjDMSL4PpPE",
       "video_id": "QjDMSL4PpPE"
     },
@@ -777,7 +816,7 @@
       "published": "2026-11-17T15:00:40+00:00",
       "status": "skipped_short",
       "title": "Why This AI Founder Won't Hire From OpenAI",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/Qopc3Q6LuV0",
       "video_id": "Qopc3Q6LuV0"
     },
@@ -797,17 +836,17 @@
       "video_id": "R8loy37E_lg"
     },
     "RZ4BBkSZ3io": {
-      "attempts": 4,
+      "attempts": 5,
       "channel": "20VC",
       "channel_id": "UCf0PBRjhf0rF8fWBIxTuoWA",
       "error": "RZ4BBkSZ3io: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=RZ4BBkSZ3io! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] RZ4BBkSZ3io: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-20T14:12:30.142965+00:00",
       "handle": "@20VC",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-19T15:00:34+00:00",
       "status": "failed",
       "title": "Will Jensen Return to NVIDIA | Kalshi, Mercor, Fractile: Mega-Rounds Continue",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=RZ4BBkSZ3io",
       "video_id": "RZ4BBkSZ3io"
     },
@@ -819,22 +858,22 @@
       "published": "2026-11-21T01:17:53+00:00",
       "status": "skipped_short",
       "title": "AI Labs Should Stop Advancing Until They Fix Security - Paul Christiano",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/Ru0l6G5oq7U",
       "video_id": "Ru0l6G5oq7U"
     },
     "S-mfGKgD2MU": {
-      "attempts": 3,
+      "attempts": 4,
       "channel": "TBPN",
       "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
       "error": "S-mfGKgD2MU: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=S-mfGKgD2MU! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] S-mfGKgD2MU: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-21T13:52:19.693237+00:00",
       "handle": "@TBPNLive",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-20T21:08:07+00:00",
       "status": "failed",
       "title": "Market Slides, Math Solved, SpaceX is now GroundX, THE MANSION SECTION",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=S-mfGKgD2MU",
       "video_id": "S-mfGKgD2MU"
     },
@@ -846,9 +885,24 @@
       "published": "2026-11-07T21:53:54+00:00",
       "status": "skipped_short",
       "title": "How LBJ Fooled the Segregationists",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/S4NYamZuts4",
       "video_id": "S4NYamZuts4"
+    },
+    "SRhXgeNluIk": {
+      "attempts": 1,
+      "channel": "AI Engineer",
+      "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
+      "error": "SRhXgeNluIk: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=SRhXgeNluIk! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] SRhXgeNluIk: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
+      "first_failed_at": "2026-11-24T14:16:24.990035+00:00",
+      "handle": "@aiDotEngineer",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
+      "published": "2026-11-24T14:00:11+00:00",
+      "status": "failed",
+      "title": "Software Factories: Escape from Trash Mountain \u2014 Steve Yegge, Gas Town",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/watch?v=SRhXgeNluIk",
+      "video_id": "SRhXgeNluIk"
     },
     "SeGUXN8XIu8": {
       "attempts": 0,
@@ -858,7 +912,7 @@
       "published": "2026-11-15T01:05:37+00:00",
       "status": "skipped_short",
       "title": "The Next 4 Years of AI Will Look Nothing Like the Last 4",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/SeGUXN8XIu8",
       "video_id": "SeGUXN8XIu8"
     },
@@ -954,7 +1008,7 @@
       "published": "2026-11-03T16:00:19+00:00",
       "status": "skipped_short",
       "title": "The CEO Habit That Gets People to Tell You the Truth | Chase Lochmiller, Crusoe",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/UshLbshJEQg",
       "video_id": "UshLbshJEQg"
     },
@@ -996,7 +1050,7 @@
       "published": "2026-11-02T16:00:39+00:00",
       "status": "skipped_short",
       "title": "Should Every CEO Hire a Coach? Crusoe\u2019s CEO Says Yes | Chase Lochmiller",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/W8MfWS8jCG4",
       "video_id": "W8MfWS8jCG4"
     },
@@ -1008,7 +1062,7 @@
       "published": "2026-11-02T10:00:28+00:00",
       "status": "skipped_short",
       "title": "The Shift in European Defense Procurement is Structural | Uwe Horstmann, Stark",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/XYNP_3ms0Ig",
       "video_id": "XYNP_3ms0Ig"
     },
@@ -1035,7 +1089,7 @@
       "published": "2026-10-29T17:59:20+00:00",
       "status": "skipped_short",
       "title": "The buyer is a general. The customer is a staff sergeant. | Uwe Horstmann, Stark",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/Z6l61F9K-d8",
       "video_id": "Z6l61F9K-d8"
     },
@@ -1047,7 +1101,7 @@
       "published": "2026-11-20T19:34:58+00:00",
       "status": "skipped_short",
       "title": "Travis Kalanick on Jensen Huang",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/ZGUt_uvDaJw",
       "video_id": "ZGUt_uvDaJw"
     },
@@ -1074,7 +1128,7 @@
       "published": "2026-11-20T15:55:19+00:00",
       "status": "skipped_short",
       "title": "Nvidia needs Jensen, but can he return?",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/ZZEseOhghdo",
       "video_id": "ZZEseOhghdo"
     },
@@ -1086,7 +1140,7 @@
       "published": "2026-11-18T20:35:50+00:00",
       "status": "skipped_short",
       "title": "AI's First Big Box Office Smash?",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/_myHTDYcCa4",
       "video_id": "_myHTDYcCa4"
     },
@@ -1098,7 +1152,7 @@
       "published": "2026-11-21T00:35:23+00:00",
       "status": "skipped_short",
       "title": "Take-Two CEO: It's Too Early for GTA 7",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/a4tlqyjt57I",
       "video_id": "a4tlqyjt57I"
     },
@@ -1137,7 +1191,7 @@
       "published": "2026-11-09T20:37:38+00:00",
       "status": "skipped_short",
       "title": "How Robert Moses Ruled New York Without Being Elected",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/bkzWrrsRyqA",
       "video_id": "bkzWrrsRyqA"
     },
@@ -1155,6 +1209,21 @@
       "updated_at": "2026-11-20T14:12:30.142965+00:00",
       "url": "https://www.youtube.com/watch?v=cUGiVi63aV4",
       "video_id": "cUGiVi63aV4"
+    },
+    "cUY_mEemJJQ": {
+      "attempts": 1,
+      "channel": "TBPN",
+      "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
+      "error": "cUY_mEemJJQ: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=cUY_mEemJJQ! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] cUY_mEemJJQ: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
+      "first_failed_at": "2026-11-24T14:16:24.990035+00:00",
+      "handle": "@TBPNLive",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
+      "published": "2026-11-23T22:37:19+00:00",
+      "status": "failed",
+      "title": "Jensen Huang Returns As NVIDIA CEO | Diet TBPN",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/watch?v=cUY_mEemJJQ",
+      "video_id": "cUY_mEemJJQ"
     },
     "cWrYEBlWpcY": {
       "attempts": 1,
@@ -1197,6 +1266,21 @@
       "updated_at": "2026-11-23T14:20:35.316450+00:00",
       "url": "https://www.youtube.com/watch?v=fTHByDwTxGM",
       "video_id": "fTHByDwTxGM"
+    },
+    "ffHcwb1xi_w": {
+      "attempts": 1,
+      "channel": "TBPN",
+      "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
+      "error": "ffHcwb1xi_w: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ffHcwb1xi_w! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] ffHcwb1xi_w: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
+      "first_failed_at": "2026-11-24T14:16:24.990035+00:00",
+      "handle": "@TBPNLive",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
+      "published": "2026-11-23T21:18:23+00:00",
+      "status": "failed",
+      "title": "Huang Returns, Ferrari 296 CS Stuns, GTA 6 Breaks Sales Records",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/watch?v=ffHcwb1xi_w",
+      "video_id": "ffHcwb1xi_w"
     },
     "ffh7fdwfrWU": {
       "attempts": 1,
@@ -1248,7 +1332,7 @@
       "published": "2026-11-22T19:30:19+00:00",
       "status": "skipped_short",
       "title": "Chamath: The Market is BAD for Stocks Right Now",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/jHOvCD1nGEQ",
       "video_id": "jHOvCD1nGEQ"
     },
@@ -1267,6 +1351,33 @@
       "url": "https://www.youtube.com/watch?v=jiXyYYlt7Yk",
       "video_id": "jiXyYYlt7Yk"
     },
+    "k0Fpb-w62rY": {
+      "attempts": 0,
+      "channel": "TBPN",
+      "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
+      "handle": "@TBPNLive",
+      "published": "2026-11-24T02:34:42+00:00",
+      "status": "skipped_short",
+      "title": "NVIDIA's Scandal: One of the Biggest Unforced Errors in Tech History",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/shorts/k0Fpb-w62rY",
+      "video_id": "k0Fpb-w62rY"
+    },
+    "mg4yo5HUMuQ": {
+      "attempts": 1,
+      "channel": "20VC",
+      "channel_id": "UCf0PBRjhf0rF8fWBIxTuoWA",
+      "error": "mg4yo5HUMuQ: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=mg4yo5HUMuQ! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] mg4yo5HUMuQ: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
+      "first_failed_at": "2026-11-24T14:16:24.990035+00:00",
+      "handle": "@20VC",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
+      "published": "2026-11-23T15:08:03+00:00",
+      "status": "failed",
+      "title": "\"Fire the Bankers\": Most VCs Won't Survive AI | Why the Inference Layer is Uninvestable | Anj Midha",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/watch?v=mg4yo5HUMuQ",
+      "video_id": "mg4yo5HUMuQ"
+    },
     "mv9NH2HTthU": {
       "attempts": 0,
       "channel": "Sequoia Capital",
@@ -1275,7 +1386,7 @@
       "published": "2026-10-30T15:00:17+00:00",
       "status": "skipped_short",
       "title": "Why Crusoe\u2019s CEO Isn\u2019t Worried About Competitors | Chase Lochmiller",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/mv9NH2HTthU",
       "video_id": "mv9NH2HTthU"
     },
@@ -1303,6 +1414,21 @@
       "url": "https://www.youtube.com/shorts/nYvGHNDZxg0",
       "video_id": "nYvGHNDZxg0"
     },
+    "o6KIjtkRdOI": {
+      "attempts": 1,
+      "channel": "All-In Podcast",
+      "channel_id": "UCESLZhusAkFfsNsApnjF_Cg",
+      "error": "o6KIjtkRdOI: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=o6KIjtkRdOI! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] o6KIjtkRdOI: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
+      "first_failed_at": "2026-11-24T14:16:24.990035+00:00",
+      "handle": "@allin",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
+      "published": "2026-11-24T12:16:21+00:00",
+      "status": "failed",
+      "title": "Crowdstrike CEO: AI Cyberattack Wave, Hyperspeed Hacks, & The Patching Problem",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/watch?v=o6KIjtkRdOI",
+      "video_id": "o6KIjtkRdOI"
+    },
     "o7D3wiHnU4k": {
       "attempts": 0,
       "channel": "Dwarkesh Patel",
@@ -1311,7 +1437,7 @@
       "published": "2026-11-17T20:39:17+00:00",
       "status": "skipped_short",
       "title": "How Fast Can AI Become an Expert?",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/o7D3wiHnU4k",
       "video_id": "o7D3wiHnU4k"
     },
@@ -1353,22 +1479,22 @@
       "published": "2026-11-21T15:53:06+00:00",
       "status": "skipped_short",
       "title": "Who Really Makes Money From AI? | Kush Bavaria",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/pWFpTDLY7bA",
       "video_id": "pWFpTDLY7bA"
     },
     "pZWPq_ZAmM4": {
-      "attempts": 4,
+      "attempts": 5,
       "channel": "AI Engineer",
       "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
       "error": "pZWPq_ZAmM4: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pZWPq_ZAmM4! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] pZWPq_ZAmM4: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-20T14:12:30.142965+00:00",
       "handle": "@aiDotEngineer",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-19T14:00:14+00:00",
       "status": "failed",
       "title": "What it takes to set intelligence free \u2014 Fabian Hedin, CTO, Lovable",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=pZWPq_ZAmM4",
       "video_id": "pZWPq_ZAmM4"
     },
@@ -1392,7 +1518,7 @@
       "published": "2026-11-15T22:30:16+00:00",
       "status": "skipped_short",
       "title": "David Sacks: Who Risked Jail to Take Down Jensen Huang?",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/q8miqVUyh7w",
       "video_id": "q8miqVUyh7w"
     },
@@ -1404,7 +1530,7 @@
       "published": "2026-11-05T19:15:27+00:00",
       "status": "skipped_short",
       "title": "Waymo-fying People: The Egocentric Data Bet | Josh Gao, Mecka",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/qGZdj0ygD9s",
       "video_id": "qGZdj0ygD9s"
     },
@@ -1431,7 +1557,7 @@
       "published": "2026-10-30T09:00:21+00:00",
       "status": "skipped_short",
       "title": "Why Stark builds the factory before the prototype is done | Johannes Schaback",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/qwgiMe4SwF4",
       "video_id": "qwgiMe4SwF4"
     },
@@ -1455,9 +1581,24 @@
       "published": "2026-10-29T20:00:12+00:00",
       "status": "skipped_short",
       "title": "How Crusoe\u2019s CEO Runs Welders and AI Researchers | Chase Lochmiller, Crusoe",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/tPs3gJbTtmk",
       "video_id": "tPs3gJbTtmk"
+    },
+    "tRaFbDFBl_A": {
+      "attempts": 1,
+      "channel": "Sequoia Capital",
+      "channel_id": "UCWrF0oN6unbXrWsTN7RctTw",
+      "error": "tRaFbDFBl_A: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=tRaFbDFBl_A! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] tRaFbDFBl_A: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
+      "first_failed_at": "2026-11-24T14:16:24.990035+00:00",
+      "handle": "@sequoiacapital",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
+      "published": "2026-11-24T13:00:22+00:00",
+      "status": "failed",
+      "title": "OpenAI\u2019s Noam Brown: Why Game Theory Didn\u2019t Lead to General Intelligence (Live at No Limit Finals)",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/watch?v=tRaFbDFBl_A",
+      "video_id": "tRaFbDFBl_A"
     },
     "uMO3zS5FLoc": {
       "attempts": 5,
@@ -1473,6 +1614,18 @@
       "updated_at": "2026-11-23T14:20:35.316450+00:00",
       "url": "https://www.youtube.com/watch?v=uMO3zS5FLoc",
       "video_id": "uMO3zS5FLoc"
+    },
+    "vFGrw-dfoSk": {
+      "attempts": 0,
+      "channel": "20VC",
+      "channel_id": "UCf0PBRjhf0rF8fWBIxTuoWA",
+      "handle": "@20VC",
+      "published": "2026-11-23T19:10:24+00:00",
+      "status": "skipped_short",
+      "title": "Why American AI Labs Can\u2019t Access Their Own Compute | Anjney Midha",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
+      "url": "https://www.youtube.com/shorts/vFGrw-dfoSk",
+      "video_id": "vFGrw-dfoSk"
     },
     "vlfCjWuv4es": {
       "attempts": 1,
@@ -1497,7 +1650,7 @@
       "published": "2026-11-03T20:45:07+00:00",
       "status": "skipped_short",
       "title": "Mecka\u2019s Founders Came From Cloud Kitchens and Crypto, Not Robotics",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/wVXczLJ1cgI",
       "video_id": "wVXczLJ1cgI"
     },
@@ -1509,7 +1662,7 @@
       "published": "2026-11-15T15:30:02+00:00",
       "status": "skipped_short",
       "title": "David Friedberg: Bring Back Jensen If He's Innocent",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/w_QLUF4nSb4",
       "video_id": "w_QLUF4nSb4"
     },
@@ -1521,22 +1674,22 @@
       "published": "2026-11-17T19:09:32+00:00",
       "status": "skipped_short",
       "title": "Anthropic IPO Breakdown: Most Valuable Company?",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/wpRf6pd37fc",
       "video_id": "wpRf6pd37fc"
     },
     "xRJMiaUoD_8": {
-      "attempts": 4,
+      "attempts": 5,
       "channel": "AI Engineer",
       "channel_id": "UCLKPca3kwwd-B59HNr-_lvA",
       "error": "xRJMiaUoD_8: youtube-transcript-api: RequestBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=xRJMiaUoD_8! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have done too many requests and your IP has been blocked by YouTube - You ar; yt-dlp: ERROR: [youtube] xRJMiaUoD_8: Sign in to confirm you\u2019re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp for how to manually pass cookies. Also see https://github",
       "first_failed_at": "2026-11-20T14:12:30.142965+00:00",
       "handle": "@aiDotEngineer",
-      "last_attempt_at": "2026-11-23T14:20:35.316450+00:00",
+      "last_attempt_at": "2026-11-24T14:16:24.990035+00:00",
       "published": "2026-11-19T20:00:09+00:00",
       "status": "failed",
       "title": "The Sweet Side of the Bitter Lesson \u2014 Thariq Shihipar, Independent",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/watch?v=xRJMiaUoD_8",
       "video_id": "xRJMiaUoD_8"
     },
@@ -1563,7 +1716,7 @@
       "published": "2026-11-19T05:34:40+00:00",
       "status": "skipped_short",
       "title": "Travis Kalanick Wants Jensen Huang Back as NVIDIA CEO",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/ytrmKEZ97Ho",
       "video_id": "ytrmKEZ97Ho"
     },
@@ -1590,7 +1743,7 @@
       "published": "2026-11-16T18:32:44+00:00",
       "status": "skipped_short",
       "title": "\u201cMy personal assistant was leaking to short sellers.\u201d \ud83e\udd2f",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/zIsl7Q6nhFs",
       "video_id": "zIsl7Q6nhFs"
     },
@@ -1602,7 +1755,7 @@
       "published": "2026-11-20T21:33:55+00:00",
       "status": "skipped_short",
       "title": "The Art of GTA VI",
-      "updated_at": "2026-11-23T14:20:35.316450+00:00",
+      "updated_at": "2026-11-24T14:16:24.990035+00:00",
       "url": "https://www.youtube.com/shorts/zN2XWhEQKdk",
       "video_id": "zN2XWhEQKdk"
     }
