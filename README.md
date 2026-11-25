@@ -1,10 +1,10 @@
 # Transcriber
 
-Transcriber watches a short list of VC, tech, and AI YouTube channels, saves English transcripts, and writes a daily digest Diego can read in a few minutes.
+Transcriber watches a short list of VC, tech, and AI YouTube channels, summarizes new English videos, and writes a daily digest Diego can read in a few minutes.
 
 The digest is organized by theme, not by episode. When two shows make the same point, it is stated once and both shows are credited. A point already covered in the last 7 days is omitted unless a number or conclusion actually changed. After the themes, each video gets a single line: title, link, channel, guests, and only what was unique to that episode.
 
-Per-video notes (TL;DR, takeaways, claims with timestamps, people and companies, why it matters) are stored with the transcript. Those files are the source. The digest is the thing to read.
+Per-video notes (TL;DR, takeaways, claims with timestamps, people and companies, why it matters) are stored on the video record in `state/seen.json`. The transcript text is held in memory only long enough to summarize, then discarded. The digest is the thing to read.
 
 ## Channels
 
@@ -48,7 +48,7 @@ export LLM_PROVIDER=openai            # openai or anthropic; inferred from which
 export LLM_MODEL=gpt-4o-mini          # optional; defaults are gpt-4o-mini and claude-3-5-haiku-latest
 ```
 
-Without a key, `transcriber run` still saves transcripts and writes an episode index. It does not invent a theme digest.
+Without a key, `transcriber run` still fetches each transcript, records the video in state, and writes an episode index. It does not save the transcript text, and it does not invent a theme digest.
 
 ## Commands
 
@@ -59,9 +59,9 @@ transcriber run --no-summarize
 transcriber video "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-`init` reads each enabled feed and marks current videos as seen, except those published in the last N hours (default `init_lookback_hours`, 48). The next `run` then picks up only that recent window instead of the whole feed. Shorts are marked skipped. Videos that already have a transcript are left alone.
+`init` reads each enabled feed and marks current videos as seen, except those published in the last N hours (default `init_lookback_hours`, 48). The next `run` then picks up only that recent window instead of the whole feed. Shorts are marked skipped. Videos that were already transcribed or summarized are left alone.
 
-`run` is idempotent. A video that was summarized is not fetched again. A failed fetch is retried on later runs, up to 8 attempts or 7 days from the first failure, whichever comes first. `--since` limits the feed to a publish window. `--limit` caps how many videos are processed, newest first, with retries after new uploads. A lock file at `state/transcriber.lock` stops two runs from writing state at the same time.
+`run` is idempotent. A video that was summarized is not fetched again. A video that was fetched but not summarized is fetched again on a later run, because the transcript text is not kept. A failed fetch is retried on later runs, up to 8 attempts or 7 days from the first failure, whichever comes first. `--since` limits the feed to a publish window. `--limit` caps how many videos are processed, newest first, with retries after new uploads. A lock file at `state/transcriber.lock` stops two runs from writing state at the same time.
 
 `video` does one URL (`watch`, `youtu.be`, `shorts`, `embed`, or a raw 11-character id) and appends it to today's digest.
 
@@ -69,10 +69,11 @@ Add `--config path/to/config.yaml` if the file is not in the working directory. 
 
 ## What a run writes
 
-- `transcripts/<channel>/<date>-<video-id>.md` — title, channel, URL, publish time, duration, transcript source, the per-video summary, and a timestamped transcript.
 - `digests/YYYY-MM-DD.md` — the theme digest for that America/Mexico_City date. A later run on the same day merges into the file instead of duplicating episodes.
-- `state/seen.json` — video id, status, errors, and retry counts. This is what makes reruns safe.
+- `state/seen.json` — video id, status, errors, retry counts, and the per-video summary when summarization succeeds. This is what makes reruns safe. The summary is the TL;DR, takeaways, claims, people, and why it matters. The transcript text is not stored.
 - `state/covered_topics.json` — topics actually printed in a digest (`topic`, `key_points`, `date`, `sources`, `numbers`). Matching uses the last 7 days (`dedupe_window_days`). Records older than 30 days are dropped.
+
+Transcript text is not written to disk. `transcripts/` is gitignored so a stray local file cannot be committed.
 
 Both JSON files are committed on purpose so GitHub Actions remembers what it has already covered.
 
@@ -121,7 +122,7 @@ Audio download plus a local Whisper model is not wired up. From a datacenter add
 
 `.github/workflows/transcriber.yml` runs every day, including Saturday and Sunday, at about 07:00 America/Mexico_City. Mexico City is UTC−6 year-round, so the cron is `0 13 * * *` (GitHub cron is UTC and has no timezone field; the day-of-week `*` is what includes weekends). You can also run it by hand with `workflow_dispatch` (`run` or `init`, optional since/hours, limit, and skip-summary).
 
-Scheduled runs process at most 20 videos so one noisy day cannot fill the job. Anything still on the feed and not yet seen is picked up next time. The job commits `transcripts/`, `digests/`, and `state/` back to the branch even when some videos fail, then marks the job red if the run itself failed.
+Scheduled runs process at most 20 videos so one noisy day cannot fill the job. Anything still on the feed and not yet seen is picked up next time. The job commits `digests/` and `state/` back to the branch even when some videos fail, then marks the job red if the run itself failed.
 
 GitHub-hosted runner IPs are datacenter addresses. YouTube often answers those with `RequestBlocked` or a "Sign in to confirm you're not a bot" page, so a run with no proxy can commit nothing but failures. Set the Webshare secrets (or `YOUTUBE_PROXY`) before relying on the schedule.
 
@@ -165,7 +166,7 @@ This VM is a datacenter IP.
 - `yt-dlp` on `9RKrSF9d2SE` stopped with "Sign in to confirm you're not a bot" before any caption URL was issued. This was a bot check, not an HTTP 429.
 - Webshare and Supadata were not called; no credentials were available.
 - `transcriber init --hours 72` against the live feeds (temporary state directory) marked 28 videos seen, skipped 51 Shorts, and left 11 recent videos for the next run.
-- `transcriber run --limit 1 --no-summarize` selected All-In's `1bR0gtecoHU` ("Databricks CEO: AGI Is Already Here…"). `youtube-transcript-api` returned `RequestBlocked` and yt-dlp returned the bot-check page. The failure was stored with `attempts: 1`, nothing was written under `transcripts/` or `digests/`, and the process exited 1.
+- `transcriber run --limit 1 --no-summarize` selected All-In's `1bR0gtecoHU` ("Databricks CEO: AGI Is Already Here…"). `youtube-transcript-api` returned `RequestBlocked` and yt-dlp returned the bot-check page. The failure was stored with `attempts: 1`, nothing was written under `digests/`, and the process exited 1.
 - Offline tests cover RSS parsing, retry state, chunking, English rejection, and theme dedupe. The CLI help text loads.
 
 ## What Diego needs to do

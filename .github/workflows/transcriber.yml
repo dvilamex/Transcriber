@@ -24,7 +24,7 @@ on:
         required: false
         type: string
       no_summarize:
-        description: "Save transcripts and skip the LLM."
+        description: "Skip the LLM summary."
         type: boolean
         default: false
 
@@ -102,16 +102,16 @@ jobs:
           fi
           python -m transcriber "${args[@]}"
 
-      - name: Commit transcripts, digest, and state
+      - name: Commit digest and state
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add transcripts digests state
+          git add digests state
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update transcripts and digest"
+            git commit -m "Update digest and state"
             git push
           fi
 

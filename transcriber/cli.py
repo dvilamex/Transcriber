@@ -14,7 +14,7 @@ from transcriber.summarize import SummaryError
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="transcriber",
-        description="Watch YouTube channels, save transcripts, and write a theme-based digest.",
+        description="Watch YouTube channels, summarize new videos, and write a theme-based digest.",
     )
     parser.add_argument("--config", default="config.yaml", help="Path to config.yaml")
     parser.add_argument("-v", "--verbose", action="store_true")
@@ -29,11 +29,11 @@ def main(argv: list[str] | None = None) -> int:
     run = sub.add_parser("run", help="Fetch new videos, summarize them, and update today's digest")
     run.add_argument("--since", type=float, default=None, help="Only videos published within the last N hours")
     run.add_argument("--limit", type=int, default=None, help="Maximum videos to process")
-    run.add_argument("--no-summarize", action="store_true", help="Save transcripts only")
+    run.add_argument("--no-summarize", action="store_true", help="Skip the LLM summary")
 
-    video = sub.add_parser("video", help="Transcribe one YouTube URL or video id")
+    video = sub.add_parser("video", help="Summarize one YouTube URL or video id and add it to today's digest")
     video.add_argument("url")
-    video.add_argument("--no-summarize", action="store_true")
+    video.add_argument("--no-summarize", action="store_true", help="Skip the LLM summary")
 
     args = parser.parse_args(argv)
     logging.basicConfig(

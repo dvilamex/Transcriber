@@ -11,7 +11,6 @@ from zoneinfo import ZoneInfo
 from transcriber.config import RuntimeEnv, Settings
 from transcriber.lock import LockError, RunLock
 from transcriber.models import Summary, Video
-from transcriber.render import parse_transcript_segments, render_transcript, transcript_filename
 from transcriber.rss import fetch_channel_videos
 from transcriber.state import (
     Action,
@@ -111,7 +110,7 @@ def run_pipeline(
                 produced.append(item)
                 if item.get("summary_failed"):
                     failures += 1
-                log.info("saved %s (%s)", video.video_id, video.title)
+                log.info("processed %s (%s)", video.video_id, video.title)
             except (TranscriptError, SummaryError, OSError) as exc:
                 failures += 1
                 message = _redact(str(exc), env)
@@ -128,7 +127,7 @@ def run_pipeline(
         if produced:
             _write_run_digest(settings, produced, now)
             save_state(settings.state_file, state)
-    log.info("run finished: %s saved, %s failed", len(produced), failures)
+    log.info("run finished: %s processed, %s failed", len(produced), failures)
     return 1 if failures or rss_failures else 0
 
 
@@ -178,7 +177,7 @@ def process_video_url(
             return 1
         _write_run_digest(settings, [item], now)
         save_state(settings.state_file, state)
-    log.info("saved %s", item["path"])
+    log.info("processed %s (%s)", video.video_id, video.title)
     return 1 if item.get("summary_failed") else 0
 
 
@@ -279,24 +278,18 @@ def _collect(settings, state, now, since_hours, summarize, has_llm):
 
 
 def _process_video(settings, env, state, video: Video, action: Action, llm, summarize: bool, now: datetime):
+    """Fetch a transcript into memory, summarize it, and keep the summary.
+
+    Transcript text is not written to disk. A later summary retry (action
+    ``summarize``) fetches the captions again instead of reading a file.
+    """
     record = dict(state["videos"].get(video.video_id) or {})
-    segments = None
-    source = record.get("transcript_source") or ""
-    language = record.get("language") or ""
-    duration = record.get("duration_seconds")
-    relative = record.get("transcript_path")
-    path = settings.transcripts_dir / relative if relative else None
-    if action == Action.SUMMARIZE and path and path.exists():
-        segments = parse_transcript_segments(path.read_text(encoding="utf-8"))
-    if not segments:
-        fetched = fetch_transcript(video.video_id, env)
-        segments = fetched.segments
-        source = fetched.source
-        language = fetched.language_code
-        duration = fetched.duration_seconds
+    fetched = fetch_transcript(video.video_id, env)
+    segments = fetched.segments
+    source = fetched.source
+    language = fetched.language_code
+    duration = fetched.duration_seconds
     summary = None
-    summary_status = record.get("summary_status")
-    summary_note = ""
     summary_failed = False
     if summarize and llm is not None:
         try:
@@ -317,31 +310,12 @@ def _process_video(settings, env, state, video: Video, action: Action, llm, summ
             record["summary_attempts"] = attempts
             record["summary_error"] = message
             record["summary_first_failed_at"] = record.get("summary_first_failed_at") or now.isoformat()
-            summary_note = f"Summary failed and will be retried: {message}"
             log.warning("summary failed for %s: %s", video.video_id, message)
-    elif summarize:
-        summary_status = "skipped"
-        summary_note = "Summary skipped (no LLM API key)."
     else:
         summary_status = "skipped"
-        summary_note = "Summary skipped (--no-summarize)."
 
-    relative_path = transcript_filename(video)
-    target = settings.transcripts_dir / relative_path
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(
-        render_transcript(
-            video,
-            segments,
-            source=source,
-            language_code=language,
-            duration_seconds=duration,
-            summary=summary,
-            summary_note=summary_note,
-        ),
-        encoding="utf-8",
-    )
     status = "summarized" if summary_status == "ok" else "transcribed"
+    record.pop("transcript_path", None)
     record.update(
         {
             "video_id": video.video_id,
@@ -352,7 +326,6 @@ def _process_video(settings, env, state, video: Video, action: Action, llm, summ
             "url": video.url,
             "published": video.published.isoformat() if video.published else record.get("published"),
             "status": status,
-            "transcript_path": relative_path,
             "transcript_source": source,
             "language": language,
             "duration_seconds": duration,
@@ -362,11 +335,13 @@ def _process_video(settings, env, state, video: Video, action: Action, llm, summ
             "updated_at": now.isoformat(),
         }
     )
+    if not record.get("summary"):
+        record.pop("summary", None)
     state["videos"][video.video_id] = record
+    log.debug("processed %s action=%s status=%s", video.video_id, action.value, status)
     return {
         "video": video,
         "summary": summary or Summary.from_dict(record.get("summary")),
-        "path": target,
         "summary_failed": summary_failed,
     }
 

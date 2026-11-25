@@ -9,7 +9,6 @@ dedupe_window_days: 7
 chunk_chars: 12000
 chunk_overlap: 500
 
-transcripts_dir: transcripts
 digests_dir: digests
 state_file: state/seen.json
 covered_topics_file: state/covered_topics.json
