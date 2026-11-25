@@ -2,7 +2,7 @@
 
 LLM_PROVIDER=openai|anthropic, LLM_MODEL overrides the default model.
 If neither OPENAI_API_KEY nor ANTHROPIC_API_KEY is set, the caller skips
-summarization and still writes the transcript.
+summarization. Transcript text is not written to disk.
 """
 
 from __future__ import annotations

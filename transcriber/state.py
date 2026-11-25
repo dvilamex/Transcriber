@@ -1,9 +1,11 @@
 """Seen-video state and retry policy.
 
 A video is fetched at most `max_retry_runs` times and only within
-`max_retry_days` of the first failure. Successful transcripts are not
-fetched again. Init marks everything already on the feed as seen except
-videos published inside the lookback window.
+`max_retry_days` of the first failure. A summarized video is not fetched
+again. A video whose transcript was fetched but not summarized is fetched
+again on a later run, because the transcript text is not stored. Init marks
+everything already on the feed as seen except videos published inside the
+lookback window.
 """
 
 from __future__ import annotations

@@ -27,7 +27,6 @@ class Channel:
 @dataclass
 class Settings:
     channels: list[Channel]
-    transcripts_dir: Path
     digests_dir: Path
     state_file: Path
     covered_topics_file: Path
@@ -106,7 +105,6 @@ def load_config(path: str | Path) -> Settings:
         raise ConfigError("Config has no channels")
     return Settings(
         channels=channels,
-        transcripts_dir=_resolve(base, str(raw.get("transcripts_dir") or "transcripts")),
         digests_dir=_resolve(base, str(raw.get("digests_dir") or "digests")),
         state_file=_resolve(base, str(raw.get("state_file") or "state/seen.json")),
         covered_topics_file=_resolve(
